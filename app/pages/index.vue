@@ -1,15 +1,12 @@
+<script setup>
+// Nuxt 3 官方页面级重定向
+// SSR 阶段返回 302 状态码，CSR 阶段使用 router.replace 避免浏览器历史循环
+navigateTo('/dashboard', { replace: true })
+</script>
+
 <template>
-  <div class="flex min-h-screen flex-col items-center justify-center bg-background p-4">
-    <div class="w-full max-w-sm space-y-6 rounded-lg border bg-card p-8 text-center shadow-sm">
-      <h1 class="text-2xl font-bold tracking-tight">Sink</h1>
-      
-      <NuxtLink
-        to="/dashboard"
-        class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-      >
-        🔐 进入管理后台
-      </NuxtLink>
-      
-    </div>
+  <!-- 仅作为 SSR 渲染占位，实际请求会被重定向拦截，用户几乎不可见 -->
+  <div class="flex min-h-screen items-center justify-center bg-background">
+    <span class="text-sm text-muted-foreground animate-pulse">正在跳转...</span>
   </div>
 </template>
