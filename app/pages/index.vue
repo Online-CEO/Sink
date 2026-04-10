@@ -11,6 +11,6 @@ onMounted(() => {
 <template>
   <!-- 占位布局，跳转瞬间不可见 -->
   <div class="flex min-h-screen items-center justify-center bg-background">
-    <div class="animate-pulse text-sm text-muted-foreground">跳转中...</div>
+    <div class="animate-pulse text-sm text-muted-foreground">Loading...</div>
   </div>
 </template>
