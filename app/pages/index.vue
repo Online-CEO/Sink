@@ -2,9 +2,6 @@
   <div class="flex min-h-screen flex-col items-center justify-center bg-background p-4">
     <div class="w-full max-w-sm space-y-6 rounded-lg border bg-card p-8 text-center shadow-sm">
       <h1 class="text-2xl font-bold tracking-tight">Sink</h1>
-      <p class="text-sm text-muted-foreground">
-        短链服务已部署就绪
-      </p>
       
       <NuxtLink
         to="/dashboard"
@@ -13,9 +10,6 @@
         🔐 进入管理后台
       </NuxtLink>
       
-      <p class="text-xs text-muted-foreground">
-        访问短链将自动跳转，无需在此停留
-      </p>
     </div>
   </div>
 </template>
